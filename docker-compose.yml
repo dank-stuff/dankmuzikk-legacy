@@ -33,7 +33,7 @@ services:
 
   dank-ytdl:
     container_name: "dank-ytdl"
-    image: "mbaraa/ytdl-api"
+    image: "mbaraa/dankmuzikk-ytdl"
     restart: "always"
     ports:
       - "20254:4321"
