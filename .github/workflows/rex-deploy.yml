@@ -24,7 +24,7 @@ jobs:
         with:
           server-url: ${{ secrets.REX_SERVER }}
           token: ${{ secrets.REX_KEY }}
-          repo-name: dankmuzikk
+          repo-name: dankmuzikk/legacy
           commit-sha: ${{ github.sha }}
           latest-tag: ${{ github.ref }}
           compose-file-name: "docker-compose-prod.yml"

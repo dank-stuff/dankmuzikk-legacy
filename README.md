@@ -1,3 +1,6 @@
+> [!NOTE]
+> This repo is the legacy code of DankMuzikk, browse the new repos at [dank-stuff/?q=dankmuzikk](https://github.com/orgs/dank-stuff/repositories?q=dankmuzikk).
+
 <div align="center">
   <a href="https://dankmuzikk.com" target="_blank"><img src="https://dankmuzikk.com/static/android-chrome-512x512.png" width="150" /></a>
 
@@ -6,8 +9,8 @@
     <strong>Create, Share and Play Music Playlists.</strong>
   </p>
   <p>
-    <a href="https://goreportcard.com/report/github.com/mbaraa/dankmuzikk"><img alt="Go Report Card" src="https://goreportcard.com/badge/github.com/mbaraa/dankmuzikk"/></a>
-    <a href="https://github.com/mbaraa/dankmuzikk/actions/workflows/rex-deploy.yml"><img alt="rex-deployment" src="https://github.com/mbaraa/dankmuzikk/actions/workflows/rex-deploy.yml/badge.svg"/></a>
+    <a href="https://goreportcard.com/report/github.com/dank-stuff/dankmuzikk-legacy"><img alt="Go Report Card" src="https://goreportcard.com/badge/github.com/dank-stuff/dankmuzikk-legacy"/></a>
+    <a href="https://github.com/dank-stuff/dankmuzikk-legacy/actions/workflows/rex-deploy.yml"><img alt="rex-deployment" src="https://github.com/dank-stuff/dankmuzikk-legacy/actions/workflows/rex-deploy.yml/badge.svg"/></a>
   </p>
 </div>
 
@@ -60,7 +63,7 @@ IDK, it would be really nice of you to contribute, check the poorly written [CON
 1. Clone the repo.
 
 ```bash
-git clone https://github.com/mbaraa/dankmuzikk
+git clone https://github.com/dank-stuff/dankmuzikk-legacy
 ```
 
 2. Create the docker environment file
