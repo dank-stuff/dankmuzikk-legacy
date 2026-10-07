@@ -2,64 +2,196 @@ package mailer
 
 templ otpEmail(name, code string) {
 	<html lang="en">
-		<body>
-			<div
-				style="
-                    font-family: Helvetica, Arial, sans-serif;
-                    min-width: 1000px;
-                    overflow: auto;
-                    line-height: 2;
-                    "
+		<head>
+			<meta charset="utf-8"/>
+			<meta name="viewport" content="width=device-width, initial-scale=1"/>
+			<title>Your DankMuzikk verification code</title>
+			<style>
+				@media screen and (max-width: 600px) {
+					.email-container {
+						width: 100% !important;
+					}
+
+					.email-content {
+						padding: 24px 20px !important;
+					}
+
+					.brand-logo {
+						width: 36px !important;
+						height: 36px !important;
+					}
+
+					.otp-code {
+						font-size: 24px !important;
+						letter-spacing: 2px !important;
+					}
+
+					.footer-content {
+						padding: 20px !important;
+					}
+				}
+			</style>
+		</head>
+		<body
+			style="
+      margin: 0;
+      padding: 0;
+      background-color: #ffffff;
+      font-family: Helvetica, Arial, sans-serif;
+      line-height: 1.6;
+      color: #000000;
+    "
+		>
+			<table
+				role="presentation"
+				cellpadding="0"
+				cellspacing="0"
+				border="0"
+				width="100%"
+				style="width: 100%; border-collapse: collapse; background-color: #ffffff"
 			>
-				<div style="margin: 50px auto; width: 70%; padding: 20px 0">
-					<div style="border-bottom: 1px solid #eee">
-						<a
-							href="https://dankmuzikk.com"
+				<tr>
+					<td style="padding: 24px 12px">
+						<div
+							class="email-container"
 							style="
-                               font-size: 1.4em;
-                               color: #00466a;
-                               text-decoration: none;
-                               font-weight: 600;
-                             "
-						>DankMuzikk</a>
-					</div>
-					<p style="font-size: 1.1em">Hi { name },</p>
-					<p>
-						Thank you for using DankMuzikk, below lies your one-time-password, which
-						will be valid for the next <b>30 minutes</b>, don't share this code
-						with anyone in order to keep your account safe 😁
-					</p>
-					<h2
-						style="
-                           background: #00466a;
-                           margin: 0 auto;
-                           width: max-content;
-                           padding: 0 10px;
-                           color: #fff;
-                           border-radius: 4px;
-                         "
-					>
-						{ code }
-					</h2>
-					<p style="font-size: 0.9em">Regards,<br/>DankMuzikk Admin</p>
-					<hr style="border: none; border-top: 1px solid #eee"/>
-					<div
-						style="
-                           float: right;
-                           padding: 8px 0;
-                           color: #aaa;
-                           font-size: 0.8em;
-                           line-height: 1;
-                           font-weight: 300;
-                         "
-					>
-						<p>DankMuzikk</p>
-						<p>
-							<a href="mailto:pub@mbaraa.com">pub@mbaraa.com</a>
-						</p>
-					</div>
-				</div>
-			</div>
+              width: 100%;
+              max-width: 600px;
+              margin: 0 auto;
+              background-color: #ffffff;
+            "
+						>
+							<div class="email-content" style="padding: 32px 24px">
+								<!-- Brand header -->
+								<div
+									style="padding-bottom: 18px; border-bottom: 1px solid #000000"
+								>
+									<img
+										class="brand-logo"
+										src="https://dankmuzikk.com/static/android-chrome-192x192.png"
+										width="40"
+										height="40"
+										alt="DankMuzikk logo"
+										style="
+                    display: inline-block;
+                    width: 40px;
+                    height: 40px;
+                    vertical-align: middle;
+                    border: 0;
+                    border-radius: 8px;
+                  "
+									/>
+									<a
+										href="https://dankmuzikk.com"
+										style="
+                    display: inline-block;
+                    margin-left: 10px;
+                    vertical-align: middle;
+                    font-size: 22px;
+                    color: #3e732c;
+                    text-decoration: none;
+                    font-weight: 600;
+                  "
+									>DankMuzikk</a>
+								</div>
+								<!-- Email content -->
+								<div style="padding-top: 20px; color: #000000">
+									<p style="margin: 0 0 16px; font-size: 17px; color: #000000">
+										Hi { name },
+									</p>
+									<p style="margin: 0 0 24px; color: #000000">
+										Thank you for using DankMuzikk. Your one-time password is
+										below and will be valid for the next
+										<strong>30 minutes</strong>. Don’t share this code with anyone
+										to help keep your account safe 😁
+									</p>
+									<div style="margin: 0 0 24px; text-align: center">
+										<span
+											class="otp-code"
+											style="
+                      display: inline-block;
+                      padding: 8px 16px;
+                      background-color: #3e732c;
+                      color: #ffffff;
+                      border-radius: 4px;
+                      font-size: 28px;
+                      font-weight: 700;
+                      letter-spacing: 3px;
+                    "
+										>
+											{ code }
+										</span>
+									</div>
+									<p style="margin: 0 0 24px; font-size: 14px; color: #000000">
+										Regards,
+										<br/>
+										DankMuzikk Admin
+									</p>
+								</div>
+								<!-- Footer -->
+								<div style="padding-top: 18px; border-top: 1px solid #000000">
+									<div
+										class="footer-content"
+										style="
+                    padding: 22px 24px;
+                    background-color: #3e732c;
+                    border-radius: 8px;
+                    color: #ffffff;
+                  "
+									>
+										<p
+											style="
+                      margin: 0 0 4px;
+                      font-size: 16px;
+                      font-weight: 700;
+                      color: #ffffff;
+                    "
+										>
+											DankMuzikk
+										</p>
+										<p style="margin: 0 0 14px; font-size: 13px; color: #ffffff">
+											Create, Share and Play Music Playlists.
+										</p>
+										<p style="margin: 0 0 14px; font-size: 13px; color: #ffffff">
+											<a
+												href="https://dankmuzikk.com"
+												style="color: #ffffff; text-decoration: underline"
+											>
+												dankmuzikk.com
+											</a>
+											&nbsp;&nbsp;|&nbsp;&nbsp;
+											<a
+												href="mailto:baraa@dankstuff.net"
+												style="color: #ffffff; text-decoration: underline"
+											>
+												Contact us
+											</a>
+										</p>
+										<p
+											style="
+                      margin: 0;
+                      padding-top: 12px;
+                      border-top: 1px solid #ffffff;
+                      font-size: 11px;
+                      color: #ffffff;
+                    "
+										>
+											©
+											<img
+												src="https://dankstuff.net/assets/favicon-96x96.png"
+												alt="DankStuff Logo"
+												width="10"
+												height="10"
+											/>
+											DankStuff
+										</p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</td>
+				</tr>
+			</table>
 		</body>
 	</html>
 }
