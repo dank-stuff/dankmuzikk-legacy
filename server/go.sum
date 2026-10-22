@@ -1,7 +1,5 @@
 cloud.google.com/go/compute/metadata v0.3.0 h1:Tz+eQXMEqDIKRsmY3cHTL6FVaynIjX2QxYC4trgAKZc=
 cloud.google.com/go/compute/metadata v0.3.0/go.mod h1:zFmK7XCadkQkj6TtorcaGlCW1hT1fIilQDwofLpJ20k=
-codeberg.org/dankstuff/danklyrics/pkg v0.4.34 h1:YIcVdkzS8hszobC9Z2XchVOW9irm1+FjmgxGD8Inl1k=
-codeberg.org/dankstuff/danklyrics/pkg v0.4.34/go.mod h1:PzRZRAFuUfhfUesEuc7bO5n9Z+xS1awidUrLodZW8Gk=
 codeberg.org/dankstuff/danklyrics/pkg v0.4.35 h1:X0zJPuRKpqBTd65tOW+pqt3CzAyc2nXR1+RZhJQSYYk=
 codeberg.org/dankstuff/danklyrics/pkg v0.4.35/go.mod h1:PzRZRAFuUfhfUesEuc7bO5n9Z+xS1awidUrLodZW8Gk=
 filippo.io/edwards25519 v1.1.0 h1:FNf4tywRC1HmFuKW5xopWpigGjJKiJSV0Cqo0cJWDaA=

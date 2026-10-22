@@ -1,6 +1,6 @@
 module dankmuzikk-web
 
-go 1.24.1
+go 1.27.3
 
 require (
 	github.com/a-h/templ v0.3.906
