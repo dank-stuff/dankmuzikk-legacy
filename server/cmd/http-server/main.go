@@ -3,7 +3,6 @@ package main
 import (
 	"dankmuzikk/actions"
 	"dankmuzikk/app"
-	"dankmuzikk/app/models"
 	"dankmuzikk/blobs"
 	"dankmuzikk/config"
 	"dankmuzikk/danklyrics"
@@ -34,19 +33,6 @@ var (
 )
 
 func init() {
-	mmm := mailer.New()
-
-	err := mmm.SendOtpEmail(models.Profile{
-		Account:  models.Account{Email: "m.baraa.masri@gmail.com"},
-		Username: "m.baraa.masri@proton.me",
-		Name:     "Baraaaa",
-	}, "123456")
-
-	if err != nil {
-		panic(err)
-	}
-
-	return
 	mariadbRepo, err := mariadb.New()
 	if err != nil {
 		log.Fatalln(err)
